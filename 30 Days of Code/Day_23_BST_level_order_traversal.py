@@ -20,7 +20,7 @@ class Solution:
     def levelOrder(self,root):
         #Write your code here
         node_list = list()
-        node_tranversed = ''
+        node_tranversal = ''
         node_list.append(root)
         while len(node_list) > 0:
             node = node_list.pop(0)
@@ -28,8 +28,8 @@ class Solution:
                 node_list.append(node.left)
             if node.right:
                 node_list.append(node.right)
-            node_tranversed += str(node.data) + ' '
-        print(node_tranversed)
+            node_tranversal += str(node.data) + ' '
+        print(node_tranversal)
                 
 T=int(input())
 myTree=Solution()
